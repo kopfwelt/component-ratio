@@ -1,16 +1,16 @@
 {
-  "name": "component-video",
+  "name": "component-ratio",
   "version": "0.1.0",
-  "description": "Video component",
+  "description": "Ratio component",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/kopfwelt/component-video.git"
+    "url": "git+ssh://git@github.com/kopfwelt/component-ratio.git"
   },
   "author": {
     "name": "Steve Sinnwell",
     "email": "steve@kopfwelt.com"
   },
-  "homepage": "http://code.kopfwelt.com/components/video/",
+  "homepage": "http://code.kopfwelt.com/components/ratio/",
   "keywords": [
     "components",
     "es6",
