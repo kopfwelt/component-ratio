@@ -15,3 +15,5 @@ Do this:
 and presto!
 
 You can also use the mixin directly `@include aspect-ratio(4,3)` in your Sass styles.
+
+Of course, you can put anything inside, not just video. The important part is using two elements and to include the two mixins: `aspect-ratio(width, height)` and `aspect-ratio-inner()` on a direct child element.
