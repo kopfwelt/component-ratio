@@ -14,7 +14,8 @@
   "keywords": [
     "components",
     "es6",
-    "video"
+    "video",
+    "aspect-ratio"
   ],
   "license": "NOLICENCE",
   "engines": {
