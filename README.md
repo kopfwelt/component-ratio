@@ -4,13 +4,13 @@ If you want an element to scale its height in relation to the width, like a norm
 
 ## How to use
 
-1. Install the component using NPM
+1) Install the component using NPM
 
 ```
 npm install --save kopfwelt/component-ratio
 ```
 
-2. Import the SCSS mixins and apply them
+2) Import the SCSS mixins and apply them
 
 ```scss
 @import 'node_modules/kopfwelt/component-ratio/component-ratio-mixin';
@@ -25,7 +25,7 @@ npm install --save kopfwelt/component-ratio
 
 Note: the `.Ratio` and `.Ratio-inner` classes are examples. You can apply the mixins to any thing.
 
-3. Use it
+3) Use it
 
 ```markup
 <div class="Ratio">
