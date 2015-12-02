@@ -1,19 +1,42 @@
 # Ratio component
 
-Use this when you want an element to scale along a certain aspect ratio.
+If you want an element to scale its height in relation to the width, like a normal image would, you can use the styles of this component. Also known as "flexible responsive media CSS intrinsic ratio scaling technique".
 
-Example, you have a `<video>` element in a weird format. You want it to always scale in 16/9.
+## How to use
 
-Do this:
+1. Install the component using NPM
+
+```
+npm install --save kopfwelt/component-ratio
+```
+
+2. Import the SCSS mixins and apply them
+
+```scss
+@import 'node_modules/kopfwelt/component-ratio/component-ratio-mixin';
+
+.Ratio {
+	@include aspect-ratio(16,9);
+}
+.Ratio-inner {
+	@include aspect-ratio-inner;
+}
+```
+
+Note: the `.Ratio` and `.Ratio-inner` classes are examples. You can apply the mixins to any thing.
+
+3. Use it
 
 ```markup
 <div class="Ratio">
-	<video class="Ratio-inner"></video>
+	<img class="Ratio-inner" alt="" />
+</div>
+
+<div class="Ratio">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/yJkmHQ2q--I" frameborder="0" allowfullscreen></iframe>
 </div>
 ```
 
 and presto!
 
-You can also use the mixin directly `@include aspect-ratio(4,3)` in your Sass styles.
-
-Of course, you can put anything inside, not just video. The important part is using two elements and to include the two mixins: `aspect-ratio(width, height)` and `aspect-ratio-inner()` on a direct child element.
+You can put anything inside, not just video. The important part is using two elements: parent and child.
