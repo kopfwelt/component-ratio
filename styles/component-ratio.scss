@@ -1,0 +1,13 @@
+.Ratio,
+.Ratio--16-9 {
+	@include aspect-ratio(16, 9);
+}
+.Ratio--4-3 {
+	@include aspect-ratio(4, 3);
+}
+.Ratio--1-1 {
+	@include aspect-ratio(1, 1);
+}
+.Ratio-inner {
+	@include aspect-ratio-inner;
+}
